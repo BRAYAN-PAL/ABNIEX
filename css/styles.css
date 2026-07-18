@@ -263,6 +263,90 @@ h1 em {
   position: relative;
   transition: 0.3s;
 }
+.desarrollo {
+  position: relative;
+  overflow: hidden;
+}
+
+.desarrollo::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: url("../img/desarrollo.jpg") center/cover no-repeat;
+  filter: blur(2px);
+  transform: scale(1.08);
+  z-index: 0;
+}
+
+.desarrollo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 1;
+}
+
+.desarrollo > * {
+  position: relative;
+  z-index: 2;
+}
+
+.ia {
+  position: relative;
+  overflow: hidden;
+}
+
+.ia::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: url("../img/ia.png") center/cover no-repeat;
+  filter: blur(2px);
+  transform: scale(1.08);
+  z-index: 0;
+}
+
+.ia::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 1;
+}
+
+.ia > * {
+  position: relative;
+  z-index: 2;
+}
+
+.cloud {
+  position: relative;
+  overflow: hidden;
+}
+
+.cloud::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: url("../img/cloud.jpg") center/cover no-repeat;
+  filter: blur(2px);
+  transform: scale(1.08);
+  z-index: 0;
+}
+
+.cloud::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 1;
+}
+
+.cloud > * {
+  position: relative;
+  z-index: 2;
+}
+
 .service-card:hover {
   transform: translateY(-7px);
   border-color: var(--cyan);
@@ -453,52 +537,19 @@ h1 em {
 .project:hover .project-art {
   transform: scale(1.07);
 }
-.art-grid {
-  background:
-    radial-gradient(circle at 67% 35%, #15829a, transparent 4%),
-    linear-gradient(115deg, #0a213e, #172151);
+.art-grid{
+    background: url("../img/app-seguridad.png") center center no-repeat;
+    background-size: 90%;
 }
-.art-grid:before,
-.art-grid:after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(54, 230, 237, 0.6);
-  width: 62%;
-  height: 38%;
-  right: 10%;
-  top: 18%;
-  transform: skewY(-18deg);
-}
-.art-grid:after {
-  width: 42%;
-  height: 24%;
-  top: 52%;
-  right: 30%;
-}
-.art-grid span {
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  border: 1px solid var(--cyan);
-  border-radius: 50%;
-  background: #09233a;
-  box-shadow: 0 0 13px var(--cyan);
-}
-.art-grid span:nth-child(1) {
-  top: 32%;
-  left: 25%;
-}
-.art-grid span:nth-child(2) {
-  top: 18%;
-  right: 20%;
-}
-.art-grid span:nth-child(3) {
-  bottom: 28%;
-  right: 35%;
-}
-.art-grid span:nth-child(4) {
-  bottom: 18%;
-  left: 17%;
+.project-art::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(8,18,37,.10),
+        rgba(8,18,37,.10)
+    );
 }
 .art-vault {
   background:
