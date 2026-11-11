@@ -13,7 +13,6 @@
     />
     <title>ABNIEX — Ingeniería de Software</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/Logoa.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +23,8 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&amp;display=swap">
+    <link rel="stylesheet" href="css/portada.css">
   </head>
   <body>
     <header class="site-header" id="top">
@@ -41,6 +42,7 @@
           <i></i><i></i><i></i>
         </button>
         <div class="nav-links" id="nav-links">
+          <a href="#top" aria-current="page">Inicio</a>
           <a href="#services">Servicios</a><a href="#portfolio">Portafolio</a
           ><a href="#about">Nosotros</a><a href="#contact">Contacto</a>
         </div>
@@ -49,28 +51,18 @@
     </header>
 
     <main>
-      <section class="hero grid-bg">
-        <div class="hero-orb orb-one"></div>
-        <div class="hero-orb orb-two"></div>
-        <div class="container hero-content reveal">
-          <p class="eyebrow"><b></b> SOFTWARE / IA / CLOUD</p>
-          <h1>Ingeniería digital<br />para el <em>siguiente nivel.</em></h1>
-          <p class="lead">
-            Convertimos desafíos complejos en sistemas precisos, escalables y
-            preparados para crecer con su negocio.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact"
-              >Hablemos de su proyecto <span>→</span></a
-            ><a class="button text-button" href="#portfolio"
-              >Ver Proyectos <span>↓</span></a
-            >
+      <section class="agency-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Ingeniería digital<br><em>para hacer crecer su negocio.</em></h1>
+          <p class="lead">Desarrollamos webs, apps y CRM a medida. Automatizamos procesos para negocios y startups.</p>
+          <div class="agency-actions">
+            <a class="agency-cta" href="#contact">Hablemos de su proyecto <span aria-hidden="true">↗</span></a>
+            <a href="#portfolio">Ver proyectos <span aria-hidden="true">↓</span></a>
           </div>
-        </div>
-        <div class="hero-meta container">
-          <span>SCROLL PARA EXPLORAR</span>
-
-          <span></span>
+          <div class="agency-tech">
+            <p>Tecnologías que usamos</p>
+            <ul><li>Neon</li><li>Supabase</li><li>Render</li><li>n8n</li></ul>
+          </div>
         </div>
       </section>
 
@@ -283,6 +275,7 @@
           reservados.</small
         >
       </div>
+      <div class="container agency-motto"><p lang="en">Accelerate Business, Next Innovation, Evolution &amp; eXcellence.</p><p>Aceleramos los negocios con innovación, evolución y excelencia.</p></div>
     </footer>
     <a
       class="whatsapp-float"
