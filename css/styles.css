@@ -701,8 +701,8 @@ h1 em {
   z-index: 30;
   right: 22px;
   bottom: 22px;
-  background: #25d366;
-  color: #063a20;
+  background: #25D366;
+  color: #ffffff;
   text-decoration: none;
   padding: 12px 16px 12px 12px;
   display: flex;
@@ -718,8 +718,11 @@ h1 em {
   filter: brightness(1.08);
 }
 .whatsapp-float svg {
+  display: block;
   width: 24px;
-  fill: currentColor;
+  height: 24px;
+  flex: 0 0 24px;
+  fill: none;
 }
 .reveal {
   opacity: 0;
