@@ -1,21 +1,21 @@
 .agency-hero {
-  padding: clamp(130px, 14vw, 200px) 0 clamp(48px, 7vw, 90px);
+  min-height: clamp(540px, 76svh, 820px);
+  display: grid;
+  align-items: center;
+  padding: clamp(112px, calc(76px + 6vw), 160px) 0 clamp(42px, 6vw, 76px);
   text-align: center;
   background:
     radial-gradient(ellipse at 13% 64%, var(--surface-2), transparent 48%),
-    radial-gradient(ellipse at 89% 58%, #0b303e, transparent 45%), var(--bg);
+    radial-gradient(ellipse at 89% 58%, #1b3151, transparent 45%), var(--bg);
+}
+.agency-hero > .container {
+  width: min(1320px, calc(100% - 32px));
+  container-type: inline-size;
 }
 .agency-hero h1 {
-  font-size: clamp(2.65rem, 7.1vw, 7rem);
+  font-size: clamp(1.8rem, 7.2cqi, 5rem);
+  line-height: 1.08;
   font-weight: 600;
-}
-.agency-hero h1 em {
-  color: var(--cyan);
-  font:
-    italic 400 1.06em/0.95 "Instrument Serif",
-    Georgia,
-    serif;
-  letter-spacing: -0.025em;
 }
 .agency-hero .lead {
   max-width: 56ch;
@@ -29,40 +29,25 @@
 }
 .agency-actions a {
   display: inline-flex;
+  text-decoration: none;
+  color: var(--text);
   min-height: 44px;
   align-items: center;
   gap: 10px;
 }
-.agency-actions .agency-cta {
-  padding: 5px 5px 5px 18px;
+.agency-actions a:not(.agency-cta) {
+  padding: 0 28px;
+  min-height: 48px;
+  border: 1px solid var(--accent);
   border-radius: 100px;
-  background: var(--cyan);
+}
+.agency-actions .agency-cta {
+  padding: 0 28px;
+  min-height: 48px;
+  border-radius: 100px;
+  background: var(--accent);
   color: var(--bg);
-  font-weight: 700;
-}
-.agency-cta span {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--bg);
-  color: var(--cyan);
-}
-.agency-tech {
-  margin-top: clamp(48px, 7vw, 100px);
-  color: var(--muted);
-}
-.agency-tech ul {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin: 16px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--text);
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
-  font-weight: 700;
+  font-weight: 600;
 }
 .agency-motto {
   padding-block: 16px;
@@ -72,7 +57,7 @@
   margin: 0;
 }
 :focus-visible {
-  outline: 2px solid var(--cyan);
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 @media (min-width: 901px) {
@@ -86,17 +71,12 @@
     display: inline-flex;
     align-items: center;
     min-height: 36px;
-    padding-inline: clamp(10px, 1.2vw, 18px);
+    padding-inline: clamp(10px, 1.1vw, 16px);
     border-radius: 100px;
   }
   .nav-links a[aria-current] {
-    color: var(--cyan);
+    color: var(--accent);
     background: var(--bg);
-  }
-}
-@media (max-width: 540px) {
-  .agency-tech ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -109,3 +89,10 @@
     transition: none;
   }
 }
+
+.about-intro {
+  padding-block: clamp(36px, 6vw, 72px);
+  background: var(--surface);
+  scroll-margin-top: 76px;
+}
+.about-intro-layout > p { max-width: 68ch; }
