@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@700&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -32,9 +32,7 @@
   <body>
     <header class="site-header" id="top">
       <nav class="nav container" aria-label="Navegación principal">
-        <a class="brand" href="#top" aria-label="ABNIEX, inicio"
-          >ABNIEX<span>.</span></a
-        >
+        <a class="brand" href="#top" aria-label="ABNIEX, inicio"><img class="nav-brand-logo" src="img/abniex-negativo.svg" alt="" width="158" height="36" /></a>
         <button
           class="menu-toggle"
           type="button"
@@ -64,12 +62,10 @@
             negocios y startups.
           </p>
           <div class="agency-actions">
-            <a class="agency-cta" href="#contact"
-              >Hablemos de su proyecto <span aria-hidden="true">↗</span></a
-            >
-            <a href="#portfolio"
-              >Ver proyectos <span aria-hidden="true">↓</span></a
-            >
+            <a class="agency-cta" href="#contact">
+              Contáctanos
+            </a>
+            <a href="#services">Servicios <span aria-hidden="true">↓</span></a>
           </div>
           <div class="agency-tech">
             <p>Tecnologías que usamos</p>
@@ -94,7 +90,7 @@
             </p>
           </div>
           <div class="service-grid">
-            <article class="service-card desarrollo reveal">
+            <article class="service-card desarrollo reveal" id="software">
               <span class="card-index"></span>
               <div class="icon">&lt;/&gt;</div>
               <h3>Desarrollo a medida</h3>
@@ -108,7 +104,7 @@
                 <li>APIs e integraciones</li>
               </ul>
             </article>
-            <article class="service-card ia reveal">
+            <article class="service-card ia reveal" id="inteligencia-artificial">
               <span class="card-index"></span>
               <div class="icon">✦</div>
               <h3>Soluciones con IA</h3>
@@ -122,7 +118,7 @@
                 <li>Modelos predictivos</li>
               </ul>
             </article>
-            <article class="service-card cloud reveal">
+            <article class="service-card cloud reveal" id="infraestructura">
               <span class="card-index"></span>
               <div class="icon"><i class="fa-solid fa-user-lock"></i></div>
               <p>
@@ -283,20 +279,34 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-content">
-        <a class="brand" href="#top">ABNIEX<span>.</span></a>
-        <p>Ingeniería de software de siguiente nivel.</p>
-        <small
-          >© <span id="year"></span> ABNIEX. Todos los derechos
-          reservados.</small
-        >
-      </div>
-      <div class="container agency-motto">
-        <p lang="en">
-          Accelerate Business, Next Innovation, Evolution &amp; eXcellence.
-        </p>
-        <p>Aceleramos los negocios con innovación, evolución y excelencia.</p>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-brand">
+            <a href="#top"><img src="img/abniex-negativo.svg" width="158" height="36" alt="ABNIEX, inicio" /></a>
+            <p>Desarrollo de software a medida e inteligencia artificial.</p>
+            <a href="https://wa.me/51919693879">WhatsApp · +51 919 693 879</a>
+          </div>
+          <nav aria-label="Servicios en el pie">
+            <h2>Servicios</h2>
+            <a href="#software">Desarrollo a medida</a>
+            <a href="#inteligencia-artificial">Soluciones con IA</a>
+            <a href="#infraestructura">Infraestructura y despliegue</a>
+          </nav>
+          <nav aria-label="ABNIEX en el pie">
+            <h2>ABNIEX</h2>
+            <a href="#about">Nosotros</a>
+            <a href="#portfolio">Proyectos</a>
+            <a href="#contact">Contacto</a>
+          </nav>
+          <nav aria-label="Información legal">
+            <h2>Legal</h2>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="cookies.html">Cookies y servicios externos</a>
+            <a href="terminos.html">Términos de uso</a>
+          </nav>
+        </div>
+        <small class="footer-copyright">© <span id="year"></span> ABNIEX</small>
       </div>
     </footer>
     <a

@@ -29,25 +29,25 @@
 }
 .agency-actions a {
   display: inline-flex;
+  text-decoration: none;
+  color: var(--text);
   min-height: 44px;
   align-items: center;
   gap: 10px;
 }
+.agency-actions a:not(.agency-cta) {
+  padding: 0 28px;
+  min-height: 48px;
+  border: 1px solid var(--cyan);
+  border-radius: 100px;
+}
 .agency-actions .agency-cta {
-  padding: 5px 5px 5px 18px;
+  padding: 0 28px;
+  min-height: 48px;
   border-radius: 100px;
   background: var(--cyan);
   color: var(--bg);
-  font-weight: 700;
-}
-.agency-cta span {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--bg);
-  color: var(--cyan);
+  font-weight: 600;
 }
 .agency-tech {
   margin-top: clamp(48px, 7vw, 100px);
@@ -63,13 +63,6 @@
   color: var(--text);
   font-size: clamp(1rem, 2.5vw, 1.8rem);
   font-weight: 700;
-}
-.agency-motto {
-  padding-block: 16px;
-  color: var(--muted);
-}
-.agency-motto p {
-  margin: 0;
 }
 :focus-visible {
   outline: 2px solid var(--cyan);
