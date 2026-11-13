@@ -1,4 +1,5 @@
 :root {
+  --header-height: 76px;
   --bg: #070f20;
   --surface: #101a2e;
   --surface-2: #15223a;
@@ -16,6 +17,9 @@
 html {
   scroll-behavior: smooth;
 }
+main > section[id] {
+  scroll-margin-top: var(--header-height);
+}
 body {
   margin: 0;
   background: var(--bg);
@@ -28,7 +32,7 @@ body {
   margin: auto;
 }
 .site-header {
-  height: 76px;
+  height: var(--header-height);
   position: fixed;
   inset: 0 0 auto;
   z-index: 20;
@@ -736,11 +740,11 @@ h1 em {
   transform: none;
 }
 @media (max-width: 760px) {
+  :root {
+    --header-height: 66px;
+  }
   .container {
     width: min(100% - 32px, 1140px);
-  }
-  .site-header {
-    height: 66px;
   }
   .nav {
     gap: 13px;
@@ -756,7 +760,7 @@ h1 em {
   }
   .nav-links {
     position: absolute;
-    top: 66px;
+    top: var(--header-height);
     left: 0;
     right: 0;
     display: none;
@@ -847,7 +851,7 @@ h1 em {
 }
 
 .site-footer {
-  background: #222b3a;
+  background: #111d33;
   border-top: 1px solid var(--line);
   padding: 31px 0;
 }
