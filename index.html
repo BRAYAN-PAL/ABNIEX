@@ -1,302 +1,884 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="ABNIEX: ingeniería de software, inteligencia artificial e infraestructura cloud."
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      content="ABNIEX desarrolla software empresarial, automatización y soluciones de inteligencia artificial para negocios en el Perú y el exterior."
     />
     <title>ABNIEX — Ingeniería de Software</title>
-
-    <link rel="icon" type="image/png" href="img/Logoa.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@700&amp;display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="assets/marca/abniex-positivo.svg"
+      type="image/svg+xml"
     />
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&amp;display=swap"
-    />
-    <link rel="stylesheet" href="css/portada.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/plantilla.css" />
+    <script src="js/plantilla.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav container" aria-label="Navegación principal">
-        <a class="brand" href="#top" aria-label="ABNIEX, inicio"><img class="nav-brand-logo" src="img/abniex-negativo.svg" alt="" width="158" height="36" /></a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="nav-links"
+    <div
+      class="abniex-contact-strip px-3 py-2.5 text-sm text-white transition ease-in-out hover:text-white sm:py-3.5 lg:py-5"
+    >
+      <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col items-center justify-center gap-y-2 text-center sm:flex-row sm:justify-end sm:gap-x-4 sm:text-left"
         >
-          <i></i><i></i><i></i>
-        </button>
-        <div class="nav-links" id="nav-links">
-          <a href="#top" aria-current="location">Inicio</a>
-          <a href="#services">Servicios</a>
-          <a href="#about">Nosotros</a>
-          <a href="#portfolio">Portafolio</a>
-          <a href="#contact">Contacto</a>
+          <a
+            class="inline-flex w-full min-w-0 items-center justify-center gap-2 break-all leading-tight sm:w-auto sm:justify-start"
+            href="https://wa.me/51919693879"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-5 w-5 shrink-0"
+              aria-hidden="true"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+              />
+              <path d="M3 7l9 6l9 -6" />
+            </svg>
+            <span>WhatsApp · +51 919 693 879</span>
+          </a>
         </div>
-        <a class="nav-cta" href="#contact">Iniciar proyecto <span>↗</span></a>
-      </nav>
-    </header>
+      </div>
+    </div>
+    <nav class="abniex-nav">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Abrir menú principal</span>
 
-    <main>
-      <section class="agency-hero" id="top" aria-labelledby="hero-title">
-        <div class="container">
-          <h1 id="hero-title">
-            Ingeniería digital<br /><em>para hacer crecer tu negocio.</em>
-          </h1>
-          <p class="lead">
-            Desarrollamos webs, apps y CRM a medida. Automatizamos procesos para
-            negocios y startups.
-          </p>
-          <div class="agency-actions">
-            <a class="agency-cta" href="#contact">
-              Contáctanos
-            </a>
-            <a href="#services">Servicios <span aria-hidden="true">↓</span></a>
-          </div>
-        </div>
-      </section>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
 
-      <section class="section services" id="services">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">CAPACIDADES TÉCNICAS</p>
-            <h2>Construimos lo que su negocio necesita.</h2>
-            <p>
-              Somos una empresa en crecimiento enfocada en desarrollar
-              soluciones de software confiables e innovadoras.
-            </p>
-          </div>
-          <div class="service-grid">
-            <article class="service-card desarrollo reveal" id="software">
-              <span class="card-index"></span>
-              <div class="icon">&lt;/&gt;</div>
-              <h3>Desarrollo a medida</h3>
-              <p>
-                Aplicaciones robustas pensadas alrededor de sus procesos,
-                usuarios y objetivos reales.
-              </p>
-              <ul>
-                <li>Arquitectura full-stack</li>
-                <li>Modernización de sistemas</li>
-                <li>APIs e integraciones</li>
-              </ul>
-            </article>
-            <article class="service-card ia reveal" id="inteligencia-artificial">
-              <span class="card-index"></span>
-              <div class="icon">✦</div>
-              <h3>Soluciones con IA</h3>
-              <p>
-                Inteligencia artificial útil, integrada en el flujo de trabajo y
-                enfocada en resultados.
-              </p>
-              <ul>
-                <li>LLMs y automatización</li>
-                <li>Visión computacional</li>
-                <li>Modelos predictivos</li>
-              </ul>
-            </article>
-            <article class="service-card cloud reveal" id="infraestructura">
-              <span class="card-index"></span>
-              <div class="icon"><i class="fa-solid fa-user-lock"></i></div>
-              <p>
-                Entornos seguros, disponibles y optimizados para que su
-                operación nunca se detenga.
-              </p>
-              <ul>
-                <li>Cloud &amp; DevOps</li>
-                <li>CI/CD automatizado</li>
-                <li>Seguridad zero-trust</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section performance" id="about">
-        <div class="container split">
-          <div class="reveal">
-            <p class="eyebrow">ESTÁNDAR ABNIEX</p>
-            <h2>Precisión que se nota en cada entrega.</h2>
-            <p class="body-copy">
-              No solo desarrollamos software: diseñamos ecosistemas digitales
-              confiables. Aplicamos automatización, observabilidad y criterios
-              de seguridad desde el inicio.
-            </p>
-            <div class="metric-list">
-              <div>
-                <strong>99.9%</strong
-                ><span>Disponibilidad diseñada para operaciones críticas.</span>
-              </div>
-              <div>
-                <strong>24 h</strong
-                ><span>Tiempo de respuesta para iniciar la conversación.</span>
-              </div>
-            </div>
+              <svg
+                hidden
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
           <div
-            class="terminal reveal"
-            aria-label="Panel de monitoreo decorativo"
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between"
           >
-            <div class="terminal-bar">
-              <span></span><span></span><span></span
-              ><code>ABNIEX / SYSTEM STATUS</code>
+            <div class="flex flex-shrink-0 items-center">
+              <a href="index.html"
+                ><img
+                  class="h-10 w-auto"
+                  src="assets/marca/abniex-negativo.svg"
+                  alt="ABNIEX"
+              /></a>
             </div>
-            <div class="terminal-body">
-              <div class="terminal-stats">
-                <span>UPTIME <b>99.9%</b></span
-                ><span>LATENCY <b>24ms</b></span
-                ><span>SECURE <b>ACTIVE</b></span>
-              </div>
-              <div class="chart">
-                <i style="height: 28%"></i><i style="height: 47%"></i
-                ><i style="height: 38%"></i><i style="height: 68%"></i
-                ><i style="height: 55%"></i><i style="height: 84%"></i
-                ><i style="height: 66%"></i><i style="height: 92%"></i
-                ><i style="height: 74%"></i><i style="height: 100%"></i>
-              </div>
-              <code class="terminal-log"
-                >› monitoring scalable architecture... <b>online</b></code
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-8 items-center">
+                <a href="index.html" class="text-white font-medium text-white"
+                  >Inicio</a
+                >
+                <a href="#servicios" class="text-white font-medium"
+                  >Servicios</a
+                >
+                <a href="#portafolio" class="text-white font-medium"
+                  >Portafolio</a
+                >
+                <a href="#enfoque" class="text-white font-medium">Nosotros</a>
 
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
-          <div class="portfolio-head reveal">
-            <div>
-              <p class="eyebrow">ESTUDIOS DE CASO</p>
-              <h2>Ecosistemas en acción.</h2>
-            </div>
-            <p>
-              Una muestra de los sistemas que podemos crear para impulsar su
-              próxima etapa.
-            </p>
-          </div>
-          <div class="project-grid">
-            <article class="project project-large reveal">
-              <div class="project-art art-grid">
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <div class="project-copy">
-                <p>PROJECT 01</p>
-                <h3>App para Empresa de Seguridad</h3>
-                <span
-                  >Gestión de personal, turnos, asistencia y solicitudes.</span
+                <a
+                  href="contacto.html"
+                  class="select-none rounded-md px-3 py-2 text-center align-middle font-bold transition-all border border-white text-white animate-pulse text-white-300 hover:text-white"
+                  >Contacto</a
                 >
               </div>
-            </article>
-            <article class="project reveal">
-              <div class="project-art art-vault"><div></div></div>
-              <div class="project-copy">
-                <p>PROJECT 02</p>
-                <h3>Vault Mobile</h3>
-                <span>Experiencia segura para activos digitales.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:hidden" id="mobile-menu" hidden>
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a
+            href="index.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            >Inicio</a
+          >
+          <a
+            href="#servicios"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            >Servicios</a
+          >
+          <a
+            href="#portafolio"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            >Portafolio</a
+          >
+          <a
+            href="#enfoque"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            >Nosotros</a
+          >
+
+          <a
+            href="contacto.html"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
+            >Contacto</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="home-page">
+      <!-- HERO -->
+      <section
+        class="home-hero ax-hero"
+        aria-labelledby="home-title"
+        data-home-hero
+      >
+        <span class="home-hero-spotlight" aria-hidden="true"></span>
+        <div class="ax-wrap ax-hero-grid">
+          <div class="ax-hero-copy">
+            <p class="home-eyebrow">ABNIEX · Tecnología empresarial</p>
+            <h1 id="home-title">
+              <span class="abniex-gradient-text">Webs, apps y CRM</span>
+              <span class="ax-h1-line">a medida.</span>
+            </h1>
+            <p class="ax-lead">
+              Aceleramos los negocios con innovación, evolución y excelencia.
+              Creamos software para simplificar la operación diaria y acompañar
+              el crecimiento de tu empresa.
+            </p>
+            <div class="ax-actions">
+              <a
+                class="abniex-button abniex-button--primary"
+                href="contacto.html"
+                >Contáctanos
+                <span class="home-arrow" aria-hidden="true">→</span></a
+              >
+              <a
+                class="abniex-button abniex-button--outline-light"
+                href="#portafolio"
+                >Ver proyectos</a
+              >
+            </div>
+            <ul class="ax-proof">
+              <li>Desarrollo web y CRM</li>
+              <li>IA y automatización</li>
+              <li>Sistemas de gestión empresarial</li>
+            </ul>
+          </div>
+          <figure class="ax-hero-visual">
+            <div class="ax-browser">
+              <div class="ax-browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <img
+                src="assets/portafolio/panel-gestion-personal.png"
+                width="1496"
+                height="928"
+                alt="Panel de gestión de personal con resumen de turnos, asistencias y solicitudes"
+              />
+            </div>
+            <figcaption class="ax-float">
+              <strong>Panel de gestión de personal</strong>
+              <span>Turnos, asistencias y solicitudes en un solo lugar</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section
+        id="servicios"
+        class="ax-section ax-section--tint"
+        aria-labelledby="products-title"
+      >
+        <div class="ax-wrap">
+          <header class="ax-head">
+            <div>
+              <p class="home-eyebrow">Qué hacemos</p>
+              <h2 id="products-title" class="ax-title">
+                Servicios de software
+              </h2>
+            </div>
+            <p>
+              Trabajamos con emprendimientos y empresas de distintos tamaños, en
+              el Perú y el exterior. Desarrollamos soluciones modulares que se
+              adaptan a tu operación y pueden ampliarse a medida que crece tu
+              negocio.
+            </p>
+          </header>
+
+          <div class="ax-cards">
+            <article id="software" class="ax-card home-reveal">
+              <figure class="ax-card-media">
+                <img
+                  src="assets/servicios/desarrollo.jpg"
+                  width="1600"
+                  height="1068"
+                  alt="Desarrollador programando frente a un monitor con código"
+                  loading="lazy"
+                  decoding="async"
+                  style="object-position: 50% 35%"
+                />
+              </figure>
+              <div class="ax-card-body">
+                <h3>ABNIEX Digital</h3>
+                <p>
+                  Desarrollo de software a medida para conectar tus equipos, tus
+                  procesos y la información que usan a diario.
+                </p>
+                <ul class="ax-list">
+                  <li>
+                    <strong>Sitios web y aplicaciones móviles</strong> para
+                    presentar tus servicios y llevar tus procesos al entorno
+                    digital.
+                  </li>
+                  <li>
+                    <strong>CRM y ERP</strong> para gestionar relaciones con
+                    clientes y coordinar las operaciones internas.
+                  </li>
+                  <li>
+                    <strong>Integraciones y automatización</strong> para
+                    conectar herramientas, con mantenimiento y soporte según el
+                    proyecto.
+                  </li>
+                </ul>
               </div>
             </article>
-            <article class="project reveal">
-              <div class="project-art art-cloud">
-                <b>☁</b><i></i><i></i><i></i>
-              </div>
-              <div class="project-copy">
-                <p>PROJECT 03</p>
-                <h3>SkyNode Cloud</h3>
-                <span>Infraestructura conectada, lista para escalar.</span>
+
+            <article id="inteligencia-artificial" class="ax-card home-reveal">
+              <figure class="ax-card-media">
+                <img
+                  src="assets/servicios/ia.jpg"
+                  width="1600"
+                  height="1063"
+                  alt="Robot frente a una pantalla con un diagrama de inteligencia artificial"
+                  loading="lazy"
+                  decoding="async"
+                  style="object-position: 50% 45%"
+                />
+              </figure>
+              <div class="ax-card-body">
+                <h3>Soluciones con IA</h3>
+                <p>
+                  La inteligencia artificial es una especialidad de ABNIEX. La
+                  incorporamos cuando puede reducir trabajo manual, agilizar la
+                  atención o ayudar a tu equipo a analizar información.
+                </p>
+                <ul class="ax-list">
+                  <li>
+                    <strong>Integración de modelos de IA</strong> para analizar
+                    información y automatizar tareas.
+                  </li>
+                  <li>
+                    <strong>Asistentes virtuales y chatbots</strong> para
+                    responder consultas frecuentes y apoyar la atención al
+                    cliente.
+                  </li>
+                  <li>
+                    <strong>Procesamiento de documentos</strong> para extraer
+                    datos y clasificar archivos o solicitudes.
+                  </li>
+                </ul>
               </div>
             </article>
+
+            <article id="infraestructura" class="ax-card home-reveal">
+              <figure class="ax-card-media">
+                <img
+                  src="assets/servicios/cloud.jpg"
+                  width="1920"
+                  height="1280"
+                  alt="Botón de seguridad en una pantalla"
+                  loading="lazy"
+                  decoding="async"
+                  style="object-position: 50% 40%"
+                />
+              </figure>
+              <div class="ax-card-body">
+                <h3>ABNIEX Business</h3>
+                <p>
+                  Soluciones para negocios que necesitan organizar su operación
+                  con herramientas acordes a su sector.
+                </p>
+                <ul class="ax-list">
+                  <li>
+                    <strong>Restaurantes y barberías</strong> que necesitan
+                    gestionar pedidos, citas, clientes o servicios.
+                  </li>
+                  <li>
+                    <strong>Tiendas y librerías</strong> que necesitan organizar
+                    el catálogo, las ventas y el inventario.
+                  </li>
+                  <li>
+                    <strong>Importadoras y distribuidoras</strong> que necesitan
+                    registrar pedidos y dar seguimiento a sus operaciones.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="ax-also">
+            <span class="ax-also-label"
+              >ABNIEX Products · Líneas de software propio</span
+            >
+            <ul>
+              <li>Sistemas POS</li>
+              <li>CRM</li>
+              <li>Sistemas administrativos</li>
+              <li>Aplicaciones</li>
+              <li>Plataformas empresariales</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <div class="container contact-layout">
-          <div class="reveal">
-            <p class="eyebrow">INICIEMOS</p>
-            <h2>Cuéntenos qué quiere construir.</h2>
-            <p class="body-copy">
-              Comparta los detalles de su proyecto. Al enviar el formulario, se
-              abrirá WhatsApp para que pueda conversar directamente con nuestro
-              equipo.
+      <!-- CÓMO TRABAJAMOS -->
+      <section id="enfoque" class="ax-section" aria-labelledby="method-title">
+        <div class="ax-wrap">
+          <header class="ax-head">
+            <div>
+              <p class="home-eyebrow">Nosotros</p>
+              <h2 id="method-title" class="ax-title">Cómo trabajamos</h2>
+            </div>
+            <p>
+              Te atendemos directamente desde la primera consulta. Trabajamos
+              por etapas y organizamos las tareas con Scrum o Kanban, según las
+              necesidades del proyecto.
             </p>
+          </header>
+
+          <ol class="ax-steps">
+            <li class="home-reveal">
+              <span class="ax-step-num">01</span>
+              <h3>Conversamos</h3>
+              <p>
+                Nos cuentas qué hace hoy tu equipo, qué herramientas usa y qué
+                quieres mejorar.
+              </p>
+            </li>
+            <li class="home-reveal">
+              <span class="ax-step-num">02</span>
+              <h3>Presentamos una propuesta</h3>
+              <p>
+                Preparamos el alcance y la cotización para que puedas revisarlos
+                y aprobarlos antes de empezar.
+              </p>
+            </li>
+            <li class="home-reveal">
+              <span class="ax-step-num">03</span>
+              <h3>Desarrollamos</h3>
+              <p>
+                Construimos por etapas y revisamos los avances contigo antes de
+                seguir.
+              </p>
+            </li>
+            <li class="home-reveal">
+              <span class="ax-step-num">04</span>
+              <h3>Entregamos y damos soporte</h3>
+              <p>
+                Ponemos en marcha la solución y brindamos el soporte acordado
+                para ayudarte a incorporarla a tu operación.
+              </p>
+            </li>
+          </ol>
+
+          <ul class="ax-pillars">
+            <li>
+              <span aria-hidden="true" class="abniex-icon-tile home-method-icon"
+                ><svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 12V6h6M20 6h6v6M26 20v6h-6M12 26H6v-6"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M12 12h8v8h-8z"
+                    stroke="#fff"
+                    stroke-width="2"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Misión</h3>
+                <p>
+                  Desarrollar soluciones tecnológicas que ayuden a las empresas
+                  a optimizar sus procesos, mejorar su productividad y
+                  evolucionar digitalmente.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true" class="abniex-icon-tile home-method-icon"
+                ><svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="m5 10 11-5 11 5-11 5-11-5Z"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 10v12l11 5V15M16 15l11-5v12l-11 5"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Visión</h3>
+                <p>
+                  Ser una empresa tecnológica reconocida en el Perú y el
+                  exterior por la calidad de su software y la aplicación de
+                  tecnologías innovadoras.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true" class="abniex-icon-tile home-method-icon"
+                ><svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="m10 8-7 8 7 8M22 8l7 8-7 8"
+                    stroke="#fff"
+                    stroke-width="2.5"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="m19 6-6 20"
+                    stroke="#fff"
+                    stroke-width="2.5"
+                    stroke-linecap="square"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Valores</h3>
+                <p>
+                  Innovación, excelencia, evolución, compromiso, confianza,
+                  calidad y adaptabilidad.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO -->
+      <section
+        id="portafolio"
+        class="ax-section ax-section--tint"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="ax-wrap">
+          <header class="ax-head">
+            <div>
+              <p class="home-eyebrow">Proyectos</p>
+              <h2 id="portfolio-title" class="ax-title">Portafolio</h2>
+            </div>
+            <p>
+              Ejemplos de software para coordinar equipos, gestionar clientes y
+              organizar las operaciones de un negocio.
+            </p>
+          </header>
+
+          <div class="ax-portfolio-stage" data-portfolio-stage>
+            <article
+              id="proyecto-seguridad"
+              class="ax-feature"
+              data-project-slide
+              tabindex="-1"
+            >
+              <div class="ax-feature-copy">
+                <span class="ax-tag">Web + app móvil</span>
+                <h3>
+                  App de gestión de personal para una empresa de seguridad
+                </h3>
+                <p>
+                  Una aplicación web y móvil para coordinar al personal: desde
+                  el resumen se consultan los turnos del día, las últimas
+                  marcaciones y las solicitudes pendientes.
+                </p>
+                <ul class="ax-list ax-list--light">
+                  <li>Consulta de trabajadores y turnos programados.</li>
+                  <li>Seguimiento de asistencias, tardanzas y marcaciones.</li>
+                  <li>
+                    Revisión de solicitudes desde el panel administrativo.
+                  </li>
+                </ul>
+              </div>
+              <figure class="ax-feature-media">
+                <img
+                  src="assets/portafolio/app-seguridad.png"
+                  width="1400"
+                  height="719"
+                  alt="Pantalla de inicio de sesión de la aplicación en computadora y en teléfono"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+
+            <article
+              id="proyecto-barberia"
+              class="ax-feature"
+              data-project-slide
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              <div class="ax-feature-copy">
+                <span class="ax-tag">CRM</span>
+                <h3>CRM para una barbería</h3>
+                <p>
+                  Un sistema para gestionar las citas y los cobros de la
+                  barbería desde un mismo panel.
+                </p>
+                <ul class="ax-list ax-list--light">
+                  <li>Agenda con citas y su estado.</li>
+                  <li>Registro de clientes y servicios.</li>
+                  <li>Resumen de ventas y métodos de pago.</li>
+                </ul>
+              </div>
+              <figure class="ax-feature-media">
+                <img
+                  src="assets/portafolio/crm-barberia.svg"
+                  width="1920"
+                  height="1080"
+                  alt="Inicio de sesión del CRM de barbería en un teléfono y resumen de citas y cobros en una tableta"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+            <article
+              id="proyecto-solectric"
+              class="ax-feature"
+              data-project-slide
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              <div class="ax-feature-copy">
+                <span class="ax-tag">Web + app móvil</span>
+                <h3>Control de asistencia para Solectric Perú</h3>
+                <p>
+                  Un sistema para registrar entradas y salidas desde el teléfono
+                  y administrar puntos de trabajo desde un panel web.
+                </p>
+                <ul class="ax-list ax-list--light">
+                  <li>
+                    Marcación de entrada y salida desde la aplicación móvil.
+                  </li>
+                  <li>
+                    Consulta de puntos asignados y su ubicación en el mapa.
+                  </li>
+                  <li>
+                    Revisión y edición de marcaciones desde el panel
+                    administrativo.
+                  </li>
+                </ul>
+              </div>
+              <figure class="ax-feature-media">
+                <img
+                  src="assets/portafolio/solectric.svg"
+                  width="1920"
+                  height="1080"
+                  alt="Sistema de asistencia de Solectric Perú en monitor, tableta, teléfono y laptop"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+            <article
+              id="proyecto-shopify"
+              class="ax-feature"
+              data-project-slide
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              <div class="ax-feature-copy">
+                <span class="ax-tag">Shopify</span>
+                <h3>Gestión para tienda Shopify</h3>
+                <p>
+                  Sistema para organizar el inventario y los pedidos de una
+                  tienda de repuestos de autos.
+                </p>
+                <ul class="ax-list ax-list--light">
+                  <li>Organización del catálogo de repuestos.</li>
+                  <li>Consulta de existencias y seguimiento de pedidos.</li>
+                </ul>
+              </div>
+              <figure class="ax-feature-media">
+                <img
+                  src="assets/portafolio/shopify.svg"
+                  width="1920"
+                  height="1080"
+                  alt="Mockup del proyecto de gestión para una tienda Shopify"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+          </div>
+
+          <div class="ax-projects">
+            <article class="ax-project home-reveal">
+              <div
+                class="ax-project-art ax-art-4 ax-project-art--image"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/portafolio/app-seguridad.png"
+                  width="1400"
+                  height="719"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="ax-project-body">
+                <h3>
+                  <a class="ax-project-link" href="#proyecto-seguridad"
+                    >App de gestión de personal</a
+                  >
+                </h3>
+                <p>
+                  Turnos, asistencias y solicitudes para una empresa de
+                  seguridad.
+                </p>
+                <ul class="ax-chips">
+                  <li>Web</li>
+                  <li>App móvil</li>
+                </ul>
+              </div>
+            </article>
+            <article class="ax-project home-reveal">
+              <div
+                class="ax-project-art ax-art-1 ax-project-art--image"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/portafolio/crm-barberia.svg"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="ax-project-body">
+                <h3>
+                  <a class="ax-project-link" href="#proyecto-barberia"
+                    >CRM para una barbería</a
+                  >
+                </h3>
+                <p>
+                  Sistema propio para llevar clientes, servicios y citas en un
+                  solo panel.
+                </p>
+                <ul class="ax-chips">
+                  <li>Node.js</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="ax-project home-reveal">
+              <div
+                class="ax-project-art ax-art-1 ax-project-art--image"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/portafolio/solectric.svg"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="ax-project-body">
+                <h3>
+                  <a class="ax-project-link" href="#proyecto-solectric"
+                    >Solectric Perú</a
+                  >
+                </h3>
+                <p>Registro de asistencia y gestión de puntos de trabajo.</p>
+                <ul class="ax-chips">
+                  <li>Asistencia</li>
+                  <li>Ubicaciones</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="ax-project home-reveal">
+              <div
+                class="ax-project-art ax-art-4 ax-project-art--image"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/portafolio/shopify.svg"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="ax-project-body">
+                <h3>
+                  <a class="ax-project-link" href="#proyecto-shopify"
+                    >Gestión para tienda Shopify</a
+                  >
+                </h3>
+                <p>
+                  Sistema para ordenar inventario y pedidos de una tienda de
+                  repuestos de autos.
+                </p>
+                <ul class="ax-chips">
+                  <li>Shopify</li>
+                  <li>Inventario</li>
+                  <li>Pedidos</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <h3 class="ax-capsule-heading" id="otros-proyectos">
+            Otros proyectos
+          </h3>
+          <div class="ax-portfolio-capsules">
+            <ul class="ax-capsule-track" aria-labelledby="otros-proyectos">
+              <li>Nexo ERP</li>
+              <li>RutaStock</li>
+              <li>Agenda Clara</li>
+              <li>Turno Azul</li>
+              <li>Stock Faro</li>
+              <li>Caja Nube</li>
+              <li aria-hidden="true">Nexo ERP</li>
+              <li aria-hidden="true">RutaStock</li>
+              <li aria-hidden="true">Agenda Clara</li>
+              <li aria-hidden="true">Turno Azul</li>
+              <li aria-hidden="true">Stock Faro</li>
+              <li aria-hidden="true">Caja Nube</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section
+        id="contacto-home"
+        class="home-contact ax-cta"
+        aria-labelledby="contact-home-title"
+      >
+        <div class="ax-wrap ax-cta-grid">
+          <div>
+            <h2 id="contact-home-title" class="ax-title ax-title--light">
+              Cuéntanos sobre tu proyecto.
+            </h2>
+            <p class="home-contact-copy">
+              Cuéntanos qué proceso quieres mejorar y qué herramientas usa tu
+              equipo. Te atenderemos por WhatsApp para entender tu necesidad y
+              preparar una propuesta con el alcance y la cotización.
+            </p>
+          </div>
+          <div class="ax-cta-actions">
+            <a class="abniex-button abniex-button--light" href="contacto.html"
+              >Contáctanos
+              <span class="home-arrow" aria-hidden="true">→</span></a
+            >
             <a
-              class="contact-whatsapp"
-              href="https://wa.me/51919693879"
-              target="_blank"
-              rel="noopener"
-              ><span>◉</span> +51 919 693 879</a
+              class="abniex-button abniex-button--outline-light"
+              href="https://wa.me/51919693879?text=Hola%20ABNIEX%2C%20quiero%20conversar%20sobre%20un%20proyecto."
+              >Escribir por WhatsApp</a
             >
           </div>
-          <form class="contact-form reveal" id="contact-form">
-            <label
-              >Nombre<input
-                name="name"
-                autocomplete="name"
-                required
-                placeholder="Nombre completo" /></label
-            ><label
-              >Correo electrónico<input
-                type="email"
-                name="email"
-                autocomplete="email"
-                required
-                placeholder="tu@empresa.com" /></label
-            ><label
-              >Proyecto<textarea
-                name="project"
-                required
-                placeholder="Cuéntanos brevemente qué necesitas..."
-              ></textarea></label
-            ><button class="button primary" type="submit">
-              Enviar por WhatsApp <span>→</span>
-            </button>
-            <p class="form-note" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-columns">
+    <footer class="bg-gray-400/5">
+      <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 abniex-footer">
           <div class="footer-brand">
-            <a href="#top"><img src="img/abniex-negativo.svg" width="158" height="36" alt="ABNIEX, inicio" /></a>
-            <p>Desarrollo de software a medida e inteligencia artificial.</p>
+            <a href="index.html"
+              ><img
+                src="assets/marca/abniex-positivo.svg"
+                width="158"
+                height="36"
+                alt="ABNIEX, inicio"
+            /></a>
+            <p>
+              Desarrollo de software empresarial, automatización e inteligencia
+              artificial.
+            </p>
             <a href="https://wa.me/51919693879">WhatsApp · +51 919 693 879</a>
           </div>
           <nav aria-label="Servicios en el pie">
             <h2>Servicios</h2>
-            <a href="#software">Desarrollo a medida</a>
-            <a href="#inteligencia-artificial">Soluciones con IA</a>
-            <a href="#infraestructura">Infraestructura y despliegue</a>
+            <a href="index.html#software">Desarrollo a medida</a>
+            <a href="index.html#inteligencia-artificial">Soluciones con IA</a>
+            <a href="index.html#infraestructura">Soluciones para negocios</a>
           </nav>
           <nav aria-label="ABNIEX en el pie">
             <h2>ABNIEX</h2>
-            <a href="#about">Nosotros</a>
-            <a href="#portfolio">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="index.html#enfoque">Nosotros</a>
+            <a href="index.html#portafolio">Proyectos</a>
+            <a href="index.html#contacto-home">Contacto</a>
           </nav>
           <nav aria-label="Información legal">
             <h2>Legal</h2>
-            <a href="privacidad.html">Privacidad</a>
-            <a href="cookies.html">Cookies y servicios externos</a>
-            <a href="terminos.html">Términos de uso,</a>
+            <a href="legal/privacidad.html">Privacidad</a>
+            <a href="legal/cookies.html">Cookies y servicios externos</a>
+            <a href="legal/terminos.html">Términos de uso</a>
           </nav>
         </div>
         <small class="footer-copyright">© <span id="year"></span> ABNIEX</small>
@@ -308,11 +890,24 @@
       target="_blank"
       rel="noopener"
       aria-label="Escríbenos por WhatsApp"
-      ><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.45L3 20.5l1.55-4.9A8.5 8.5 0 1 1 20.5 11.5Z"/>
-        <path d="m8 7.5 1.4-.2 1 2.4-.9 1a7.2 7.2 0 0 0 2.8 2.8l1-.9 2.4 1-.2 1.4c-.1.8-.9 1.3-1.7 1.1-3.7-.8-6.5-3.6-7.3-7.3-.2-.8.3-1.6 1.1-1.7Z"/>
-      </svg><span>WhatsApp</span></a
+      ><svg
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path
+          d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.45L3 20.5l1.55-4.9A8.5 8.5 0 1 1 20.5 11.5Z"
+        />
+        <path
+          d="m8 7.5 1.4-.2 1 2.4-.9 1a7.2 7.2 0 0 0 2.8 2.8l1-.9 2.4 1-.2 1.4c-.1.8-.9 1.3-1.7 1.1-3.7-.8-6.5-3.6-7.3-7.3-.2-.8.3-1.6 1.1-1.7Z"
+        /></svg
+      ><span>WhatsApp</span></a
     >
-    <script src="js/script.js"></script>
   </body>
 </html>
