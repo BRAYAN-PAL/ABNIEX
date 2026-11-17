@@ -80,45 +80,30 @@
                 </div>
               </nav>
 <main class="home-page">
-  <section class="contact-page home-container">
-    <div>
-      <p class="home-eyebrow">Contacto</p>
-      <h1 class="home-heading">Cuéntanos sobre tu proyecto.</h1>
+  <section class="contact-page home-container" aria-labelledby="contact-title">
+    <div class="contact-intro">
+      <h1 id="contact-title">Cuéntanos sobre tu proyecto.</h1>
       <p>Completa el formulario para preparar tu mensaje. Podrás revisarlo y enviarlo en WhatsApp.</p>
-      <a
-              class="contact-whatsapp"
-              href="https://wa.me/51919693879"
-              target="_blank"
-              rel="noopener"
-              >WhatsApp · +51 919 693 879</a
-            >
+      <a class="contact-whatsapp" href="https://wa.me/51919693879" target="_blank" rel="noopener">
+        WhatsApp · +51 919 693 879 <span aria-hidden="true">↗</span>
+      </a>
     </div>
-    <form class="abniex-form" id="contact-form">
-            <label
-              >Nombre<input
-                name="name"
-                autocomplete="name"
-                required
-                placeholder="Nombre completo" /></label
-            ><label
-              >Correo electrónico<input
-                type="email"
-                name="email"
-                autocomplete="email"
-                required
-                placeholder="tu@empresa.com" /></label
-            ><label
-              >Proyecto<textarea
-                name="project"
-                required
-                placeholder="Cuéntanos brevemente qué necesitas..."
-              ></textarea></label
-            ><button class="abniex-button abniex-button--primary" type="submit">
-              Continuar a WhatsApp <span>→</span>
-            </button>
-            <p class="contact-wide form-note" aria-live="polite"></p>
-            <a class="contact-wide form-fallback" target="_blank" rel="noopener" hidden>Abrir mensaje en WhatsApp</a>
-          </form>
+    <form id="contact-form" class="abniex-form" method="post">
+      <label>Nombre
+        <input name="name" autocomplete="name" required placeholder="Nombre completo">
+      </label>
+      <label>Correo electrónico
+        <input type="email" name="email" autocomplete="email" required placeholder="tu@empresa.com">
+      </label>
+      <label class="contact-wide">Proyecto
+        <textarea name="project" required rows="5" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
+      </label>
+      <button class="abniex-button abniex-button--primary contact-wide" type="submit">
+        Continuar a WhatsApp <span aria-hidden="true">↗</span>
+      </button>
+      <p class="contact-wide form-note" aria-live="polite"></p>
+      <a class="contact-wide form-fallback" target="_blank" rel="noopener" hidden>Abrir mensaje en WhatsApp</a>
+    </form>
   </section>
 </main>
 <footer class="bg-gray-400/5">
